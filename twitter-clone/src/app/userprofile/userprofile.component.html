@@ -1,0 +1,12 @@
+<div class="user-profile" *ngIf="user">
+  <div class="profile-info">
+    <h2>{{ user.name }}</h2>
+    <p>Email: {{ user.email }}</p>
+    <p>Website: {{ user.website }}</p>
+    <p>City: {{ user.city }}</p>
+  </div>
+  <div class="profile-posts">
+    <app-posts [userId]="user.id"></app-posts>
+  </div>
+</div>
+

@@ -1,0 +1,10 @@
+<div class="header">
+    <div>Twitter clone</div>
+    <div id="user-list" class="user-list">
+      <label for="search">Search</label>
+      <div *ngFor="let user of users" class="user-item">
+        <h3><a [routerLink]="['/user', user.id]">{{ user.name }}</a></h3>
+      </div>
+    </div>
+  </div>
+  
